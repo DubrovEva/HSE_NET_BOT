@@ -5,7 +5,7 @@ bot = telebot.TeleBot(token=token)
 
 
 @bot.message_handler(content_types=['text'])
-def echo(message):
+def text_response(message):
     text = message.text
     user = message.chat.id
 
